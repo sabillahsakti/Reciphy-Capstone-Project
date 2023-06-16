@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/logo_title"
+        android:textColor="@color/orange"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/log_in"
+            android:textColor="@color/dark_blue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_noAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/dont_have_account" />
+
+        <Button
+            android:id="@+id/btn_noAccount"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/tv_noAccount"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="-11dp"
+            android:layout_toEndOf="@+id/tv_noAccount"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/orange" />
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_loginusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/username"
+        android:textColorHint="@color/dark_grey"
+        app:boxBackgroundColor="@color/soft_grey"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeWidth="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_loginusername"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_loginpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        android:textColorHint="@color/dark_grey"
+        app:boxBackgroundColor="@color/soft_grey"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeWidth="0dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_loginpassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/poppins"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_forget"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="end"
+        android:text="@string/forget"
+        android:textAllCaps="false"
+        android:textColor="@color/orange" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="@font/poppins_medium"
+        android:stateListAnimator="@null"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:cornerRadius="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/line1"
+            android:layout_width="90dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_rect"
+            android:backgroundTint="@color/dark_grey"
+            app:cardElevation="0dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="112dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/continue_with"
+            android:textAlignment="center" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/line2"
+            android:layout_width="90dp"
+            android:layout_height="2dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/search_rect"
+            android:backgroundTint="@color/dark_grey"
+            app:cardElevation="0dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/soft_grey"
+        android:fontFamily="@font/poppins_medium"
+        android:stateListAnimator="@null"
+        android:text="@string/google"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
+        android:textSize="16sp"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/ic_google_svg"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconSize="24dp"
+        app:iconTintMode="multiply" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

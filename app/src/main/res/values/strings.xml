@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Reciphy App</string>
+    <string name="logo_title">RECIPHY</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="dont_have_account">Tidak memiliki akun?</string>
+    <string name="have_account">Sudah memiliki akun?</string>
+    <string name="homepage_greeting">Apa yang ingin kamu masak hari ini?</string>
+    <string name="username">Username or Email</string>
+    <string name="signup_username">Username</string>
+    <string name="signup_email">Email</string>
+    <string name="password">Password</string>
+    <string name="continue_with">Atau lanjutkan dengan</string>
+    <string name="google">Google Account</string>
+    <string name="forget">Lupa password?</string>
+    <string name="search">Cari</string>
+    <string name="input_ing">Talur, Daun bawang, Cabai</string>
+    <string name="daging">Daging</string>
+    <string name="ayam">Ayam</string>
+    <string name="telur">Telur</string>
+    <string name="ikan">Ikan</string>
+    <string name="tahu">Tahu</string>
+    <string name="tempe">Tempe</string>
+    <string name="recommendation">Rekomendasi</string>
+    <string name="ingredients">Bahan</string>
+    <string name="steps">Cara membuat</string>
+</resources>
